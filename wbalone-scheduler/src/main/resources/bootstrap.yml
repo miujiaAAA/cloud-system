@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: wbalone-scheduler                    # 服务名（对应 Nacos 中的 dataId: wbalone.yaml）
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848  # ✅ Nacos 配置中心地址（必须写在这里）
+        namespace: dev  # 命名空间（可选）
+        group: common         # 分组（可选）
