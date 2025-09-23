@@ -6,6 +6,7 @@ spring:
     import:
       - nacos:wbalone-${spring.profiles.active}.properties  # 应用自身配置（wbalone-dev.properties）
       - nacos:common.properties?group=common
+      - nacos:db.properties?group=common
 
   cloud:
     nacos:
@@ -22,4 +23,19 @@ spring:
         namespace: ${spring.cloud.nacos.discovery.namespace}  # 与共享配置的命名空间一致
         group: ${spring.cloud.nacos.discovery.group}
         file-extension: properties  # 配置文件格式（properties/yaml）
+        refresh: true
 
+  # 数据库配置
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://47.108.227.234:3306/lirui_boot?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+#    username: lirui
+#    password: Sxyh_96968
+
+# MyBatis-Plus配置
+#mybatis-plus:
+#  type-aliases-package: com.wbalone.mapper
+#  mapper-locations: classpath*:/mybatis/**/*.xml
+#  configuration:
+#    map-underscore-to-camel-case: true
+#    cache-enabled: false
