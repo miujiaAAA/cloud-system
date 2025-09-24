@@ -17,6 +17,7 @@
         <module>wbalone</module>
         <module>wbalone-commons</module>
         <module>wbalone-scheduler</module>
+        <module>wbalone-gateway</module>
     </modules>
 
 
