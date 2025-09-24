@@ -37,7 +37,12 @@ security:
   # 安全白名单路径（完全绕过安全过滤器）
   ignore-urls:
     - /api/v1/auth/login/**       # 登录接口(账号密码登录、手机验证码登录和微信登录)
-
+  # 非安全端点路径（允许匿名访问的API）
+  unsecured-urls:
+    - /doc.html
+    - /swagger-ui/**
+    - /v3/api-docs/**
+    - /webjars/**
 # JWT配置
 jwt:
   secret: SecretKey012345678901234567890123456789012345678901234567890123456789  # 使用已有的密钥配置
