@@ -34,17 +34,3 @@ jwt:
 security:
   ignore-urls:
     - /api/v1/auth/login/**  # 登录接口白名单
-# 数据库配置
-#  datasource:
-#    driver-class-name: com.mysql.cj.jdbc.Driver
-#    url: jdbc:mysql://47.108.227.234:3306/lirui_boot?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
-#    username: lirui
-#    password: Sxyh_96968
-
-# MyBatis-Plus配置
-#mybatis-plus:
-#  type-aliases-package: com.wbalone.mapper
-#  mapper-locations: classpath*:/mybatis/**/*.xml
-#  configuration:
-#    map-underscore-to-camel-case: true
-#    cache-enabled: false
