@@ -1,3 +1,4 @@
 # 项目排除路径
 /wbalone/target/
 /wbalone-scheduler/target/
+/wbalone-commons/target/
