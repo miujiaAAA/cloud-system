@@ -21,6 +21,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @RequiredArgsConstructor
 public class SecurityConfig {
 
+    private final JwtAuthenticationFilter jwtAuthenticationFilter;
     private final String[] ignoreUrls = {"/api/v1/auth/login/**"};
 
     @Bean
@@ -34,7 +35,7 @@ public class SecurityConfig {
             );
 
         // 添加JWT过滤器
-
+        http.addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
         return http.build();
     }
 
