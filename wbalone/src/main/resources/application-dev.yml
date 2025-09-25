@@ -24,13 +24,4 @@ spring:
         group: ${spring.cloud.nacos.discovery.group}
         file-extension: properties  # 配置文件格式（properties/yaml）
         refresh: true
-# JWT配置
-jwt:
-  secret: SecretKey012345678901234567890123456789012345678901234567890123456789  # 至少32位
-  expiration: 3600000  # 访问令牌有效期（1小时，单位：毫秒）
-  refresh-expiration: 604800000  # 刷新令牌有效期（7天，单位：毫秒）
 
-# 安全配置
-security:
-  ignore-urls:
-    - /api/v1/auth/login/**  # 登录接口白名单
