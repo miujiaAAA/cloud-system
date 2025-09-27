@@ -1,5 +1,0 @@
-spring:
-  application:
-    name: wbalone-scheduler
-  profiles:
-    active: dev  # 环境标识，对应配置文件的环境后缀
